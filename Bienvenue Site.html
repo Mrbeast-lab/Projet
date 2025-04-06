@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenue Site</title>
+    <style>
+body{
+width:99%;
+height: 100vh;
+margin:0;
+font-family:arial;
+font-size:20px;
+background: linear-gradient(to bottom,green,aqua);
+color:white;
+text-align:center;
+}
+.r{
+margin-top:5%;
+text-align:center;
+position:relative;
+animation-name:a;
+animation-duration:3s;
+animation-timing-function:ease;
+animation-delay:1s;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+}
+@keyframes a{
+0%{color:green;}
+25%{color:yellow;}
+50%{color:red;}
+75%{color:blue;}
+100%{color:green;}
+}
+.slide{
+float:left;
+}
+.slides{
+width:2500px;
+animation:g 20s infinite ease;
+}
+.slider{
+margin:0 auto;
+width:500px;
+overflow:hidden;
+}
+@keyframes g{
+0%,20%{
+transform:translateX(0);
+}
+25%,45%{
+transform:translateX(-500px);
+}
+50%,70%{
+transform:translateX(-1000px);
+}
+75%,95%{
+transform:translateX(-1500px);
+}
+100%{
+transform:translateX(-2000px);
+}
+}
+</style>
+</head>
+<body>
+<div class="r">
+<h1>Soyez le bienvenue sur notre page web</h1>
+</div>
+<h3>Admirez un peu notre jolie animation</h3>
+<div class="slider">
+<div class="slides">
+ <div class="slide"><img src="MrBeast-logo.png"/ width=500/></div>
+ <div class="slide"><img src="a.png"/ width=500/></div>
+ <div class="slide"><img src="b.png"/ width=500/></div>
+ <div class="slide"><img src="c.png"/ width=500/></div>
+ <div class="slide"><img src="MrBeast-logo.png"/ width=500/></div>
+</div>
+</div>
+</body>
+</html>
